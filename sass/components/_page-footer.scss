@@ -1,0 +1,90 @@
+footer {
+  background-color: getColor("background");
+  color: getColor("white-color");
+  padding: rem(60) 0;
+}
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+.footer__box1 {
+  margin-right: rem(70);
+}
+footer address {
+  @include font-custome(400, 14, 24, 0.03);
+  color: getColor("footer-link");
+}
+.footer__address-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: getColor("white-color");
+  }
+}
+
+.footer__box2 {
+  margin-right: rem(93);
+}
+.footer__box2-title {
+  margin-bottom: rem(20);
+}
+.footer__social-icons {
+  display: flex;
+}
+.footer__icon {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: rem(44);
+  width: rem(44);
+  @include flex(center, center);
+  outline: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: getColor("accent-color");
+  }
+}
+.footer__icons-list:not(:last-child) {
+  margin-right: rem(10);
+}
+.footer__icon-color {
+  fill: currentColor;
+}
+.footer__box3-form {
+  @include flex(center, center);
+}
+.footer__email {
+  border: rem(1) solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadowrem((0) rem(4) rem(4) rgba(0, 0, 0, 0.15));
+  border-radius: rem(4);
+  background-color: inherit;
+  padding: rem(15) rem(160) rem(15) rem(16);
+  margin-right: rem(12);
+  color: inherit;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: rem(1) solid getColor("white-color");
+  }
+}
+.footer__email-button {
+  background: getColor("accent-color");
+  box-shadow: rem(0) rem(4) rem(4) rgba(0, 0, 0, 0.15);
+  border-radius: rem(4);
+  color: inherit;
+  width: rem(200);
+  padding: rem(10);
+  @include flex(center, center);
+  text-align: center;
+  @include font-custome(700, 16, 30, 0.06);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: getColor("button-hero-hover");
+    cursor: pointer;
+  }
+}
+.footer__button-icon {
+  margin-left: rem(10);
+  fill: currentColor;
+}

@@ -1,0 +1,31 @@
+.Customers__title {
+  @include title-sections;
+}
+.Customers__client {
+  display: flex;
+}
+.Customers__icon {
+  padding: rem(16) rem(32);
+  fill: currentColor;
+}
+.Customers__list {
+  border: rem(1) solid getColor("icons-border");
+  border-radius: rem(4);
+  color: getColor("icons-border");
+  width: rem(170);
+  height: rem(92);
+  background-color: getColor("white-color");
+  outline: none;
+  transition-property: border, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: rem(1) solid getColor("accent-color");
+    cursor: pointer;
+    color: getColor("accent-color");
+  }
+  &:not(:last-child) {
+    margin-right: rem(30);
+  }
+}

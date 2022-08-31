@@ -1,0 +1,27 @@
+.features {
+  &__list {
+    display: flex;
+  }
+  &__content:not(:last-child) {
+    margin-right: rem(30);
+  }
+  &__icons {
+    margin-bottom: rem(30);
+    background-color: getColor("section-background");
+    text-align: center;
+    border-radius: rem(4);
+    padding: rem(25) rem(100);
+  }
+
+  &__topic {
+    width: rem(270);
+    @include font-custome(700, 14, 16, 0.03);
+    text-transform: uppercase;
+    margin-bottom: rem(10);
+  }
+  &__details {
+    width: rem(270);
+    @include font-custome(400, 14, 24, 0.03);
+    color: getColor("pargraph-color");
+  }
+}

@@ -1,0 +1,59 @@
+header {
+  border-bottom: rem(1) solid getColor("border-header");
+}
+.header {
+  @include flex(center, space-between);
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__links {
+    display: flex;
+  }
+  &__current-link {
+    color: getColor("accent-color");
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      right: 0;
+      bottom: rem(-1);
+      left: 0;
+      border-bottom: rem(4) solid getColor("accent-color");
+      border-radius: rem(2);
+    }
+  }
+  &__link {
+    @include font-custome(500, 14, 16, 0.02);
+    padding: rem(32) 0 rem(31) 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: getColor("accent-color");
+    }
+  }
+  &__our-contacts {
+    display: flex;
+  }
+  &__content:not(:last-child) {
+    margin-right: rem(50);
+  }
+  &__info-contacts:not(:last-child) {
+    margin-right: rem(30);
+  }
+  &__info-link {
+    color: getColor("pargraph-color");
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+  }
+  &__right-icon {
+    margin-right: rem(10);
+    fill: currentColor;
+  }
+}

@@ -1,0 +1,27 @@
+.wwd_section {
+  padding-top: 0;
+}
+.wwd_section__title {
+  @include title-sections;
+}
+.wwd_section__list {
+  display: flex;
+}
+.wwd_section__content {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: rem(30);
+  }
+}
+.wwd_section__details {
+  @include font-custome(700, 14, 16, 0.03);
+  text-align: center;
+  text-transform: uppercase;
+  color: getColor("white-color");
+  margin: 0;
+  padding: rem(27);
+  position: absolute;
+  background: getColor("img-background");
+  width: 100%;
+  bottom: 0;
+}

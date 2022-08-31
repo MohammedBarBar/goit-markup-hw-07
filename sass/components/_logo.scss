@@ -1,0 +1,6 @@
+.header__logo {
+  font-family: "Raleway", sans-serif;
+  @include font-custome(700, 26, 31, 0.03);
+  margin-right: rem(97);
+  color: getColor("accent-color");
+}

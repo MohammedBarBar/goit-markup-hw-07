@@ -1,0 +1,39 @@
+.search-buttons {
+  @include flex(center, center);
+  margin-bottom: rem(50);
+}
+.serach-buttons__item:not(:last-child) {
+  margin-right: rem(8);
+}
+.search-buttons__content {
+  background: getColor("section-background");
+  border: none;
+  text-align: center;
+  @include font-custome(500, 16, 26, 0.03);
+  padding: rem(6) rem(26);
+  border-radius: rem(4);
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: getColor("accent-color");
+    color: getColor("white-color");
+    box-shadow: rem(0) rem(3) rem(1) rgba(0, 0, 0, 0.1),
+      rem(0) rem(1) rem(2) rgba(0, 0, 0, 0.08),
+      rem(0) rem(2) rem(2) rgba(0, 0, 0, 0.12);
+    outline: none;
+    cursor: pointer;
+  }
+}
+.search-buttons__apps {
+  padding: rem(6) rem(53);
+}
+
+.search-buttons__active {
+  background-color: getColor("accent-color");
+  color: getColor("white-color");
+  box-shadow: rem(0) rem(3) rem(1) rgba(0, 0, 0, 0.1),
+    rem(0) rem(1) rem(2) rgba(0, 0, 0, 0.08),
+    rem(0) rem(2) rem(2) rgba(0, 0, 0, 0.12);
+}
