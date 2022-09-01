@@ -2,7 +2,7 @@
   &__list {
     display: flex;
   }
-  &__content:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: rem(30);
   }
   &__icons {

@@ -12,7 +12,7 @@ header {
   &__links {
     display: flex;
   }
-  &__current-link {
+  &__link--current {
     color: getColor("accent-color");
     position: relative;
 

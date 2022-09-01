@@ -24,7 +24,7 @@
           <a href="index.html" class="header__logo">WebStudio</a>
           <ul class="header__links">
             <li class="header__content">
-              <a href="index.html" class="header__link header__current-link"
+              <a href="index.html" class="header__link header__link--current"
                 >Studio</a
               >
             </li>
@@ -64,13 +64,13 @@
     </header>
     <main>
       <!-- Hero-section -->
-      <section class="hero_section section">
-        <div class="container hero_section__container">
-          <h1 class="hero_section__title">
+      <section class="hero section">
+        <div class="container hero__container">
+          <h1 class="hero__title">
             EFFECTIVE SOLUTIONS FOR <br />
             YOUR BUSINESS
           </h1>
-          <button type="button" class="hero_section__button" data-modal-open>
+          <button type="button" class="hero__button" data-modal-open>
             Request Our service
           </button>
         </div>
@@ -155,9 +155,9 @@
       <section class="section features">
         <div class="container">
           <ul class="features__list">
-            <li class="features__content">
+            <li class="features__item">
               <div class="features__icons">
-                <svg width="70" height="70" class="icon">
+                <svg width="70" height="70" class="features__icon">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
@@ -167,9 +167,9 @@
                 develop a customized solution.
               </p>
             </li>
-            <li class="features__content">
+            <li class="features__item">
               <div class="features__icons">
-                <svg width="70" height="70" class="icon">
+                <svg width="70" height="70" class="features__icon">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
@@ -179,9 +179,9 @@
                 the company: respect your time and respect the agreed deadlines.
               </p>
             </li>
-            <li class="features__content">
+            <li class="features__item">
               <div class="features__icons">
-                <svg width="70" height="70" class="icon">
+                <svg width="70" height="70" class="features__icon">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
@@ -191,9 +191,9 @@
                 solution development and implementation.
               </p>
             </li>
-            <li class="features__content">
+            <li class="features__item">
               <div class="features__icons">
-                <svg width="70" height="70" class="icon">
+                <svg width="70" height="70" class="features__icon">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
@@ -207,37 +207,37 @@
         </div>
       </section>
       <!-- What we Do Section -->
-      <section class="section wwd_section">
+      <section class="section wwd">
         <div class="container">
-          <h2 class="wwd_section__title">What we do</h2>
-          <ul class="wwd_section__list">
-            <li class="wwd_section__content">
+          <h2 class="wwd__title">What we do</h2>
+          <ul class="wwd__list">
+            <li class="wwd__content">
               <img
                 src="images/wwd.jpg"
                 alt="what we do image 1"
                 width="370px"
-                class="wwd_section__image"
+                class="wwd__image"
               />
 
-              <p class="wwd_section__details">Desktop APPS</p>
+              <p class="wwd__details">Desktop APPS</p>
             </li>
-            <li class="wwd_section__content">
+            <li class="wwd__content">
               <img
                 src="images/wwd1.jpg"
                 alt="what we do image 2"
                 width="370px"
-                class="wwd_section__image"
+                class="wwd__image"
               />
-              <p class="wwd_section__details">mobile apps</p>
+              <p class="wwd__details">mobile apps</p>
             </li>
-            <li class="wwd_section__content">
+            <li class="wwd__content">
               <img
                 src="images/wwd2.jpg"
                 alt="what we do image 3"
                 width="370px"
-                class="wwd_section__image"
+                class="wwd__image"
               />
-              <p class="wwd_section__details">Design Solutions</p>
+              <p class="wwd__details">Design Solutions</p>
             </li>
           </ul>
         </div>
@@ -260,28 +260,44 @@
               <ul class="our-team__social-icons">
                 <li class="our-team__icons-list">
                   <a href="/" class="our-team__icon"
-                    ><svg width="20" height="20" class="social-icons">
+                    ><svg
+                      width="20"
+                      height="20"
+                      class="our-team__social-icons--gray"
+                    >
                       <use href="./images/icons.svg#instgram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="our-team__icons-list">
                   <a href="/" class="our-team__icon">
-                    <svg width="20" height="20" class="social-icons">
+                    <svg
+                      width="20"
+                      height="20"
+                      class="our-team__social-icons--gray"
+                    >
                       <use href="./images/icons.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="our-team__icons-list">
                   <a href="/" class="our-team__icon">
-                    <svg width="20" height="20" class="social-icons">
+                    <svg
+                      width="20"
+                      height="20"
+                      class="our-team__social-icons--gray"
+                    >
                       <use href="./images/icons.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="our-team__icons-list">
                   <a href="/" class="our-team__icon">
-                    <svg width="20" height="20" class="social-icons">
+                    <svg
+                      width="20"
+                      height="20"
+                      class="our-team__social-icons--gray"
+                    >
                       <use href="./images/icons.svg#linkedin"></use>
                     </svg>
                   </a>
@@ -300,28 +316,44 @@
               <ul class="our-team__social-icons">
                 <li class="our-team__icons-list">
                   <a href="/" class="our-team__icon"
-                    ><svg width="20" height="20" class="social-icons">
+                    ><svg
+                      width="20"
+                      height="20"
+                      class="our-team__social-icons--gray"
+                    >
                       <use href="./images/icons.svg#instgram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="our-team__icons-list">
                   <a href="/" class="our-team__icon">
-                    <svg width="20" height="20" class="social-icons">
+                    <svg
+                      width="20"
+                      height="20"
+                      class="our-team__social-icons--gray"
+                    >
                       <use href="./images/icons.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="our-team__icons-list">
                   <a href="/" class="our-team__icon">
-                    <svg width="20" height="20" class="social-icons">
+                    <svg
+                      width="20"
+                      height="20"
+                      class="our-team__social-icons--gray"
+                    >
                       <use href="./images/icons.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="our-team__icons-list">
                   <a href="/" class="our-team__icon">
-                    <svg width="20" height="20" class="social-icons">
+                    <svg
+                      width="20"
+                      height="20"
+                      class="our-team__social-icons--gray"
+                    >
                       <use href="./images/icons.svg#linkedin"></use>
                     </svg>
                   </a>
@@ -340,28 +372,44 @@
               <ul class="our-team__social-icons">
                 <li class="our-team__icons-list">
                   <a href="/" class="our-team__icon"
-                    ><svg width="20" height="20" class="social-icons">
+                    ><svg
+                      width="20"
+                      height="20"
+                      class="our-team__social-icons--gray"
+                    >
                       <use href="./images/icons.svg#instgram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="our-team__icons-list">
                   <a href="/" class="our-team__icon">
-                    <svg width="20" height="20" class="social-icons">
+                    <svg
+                      width="20"
+                      height="20"
+                      class="our-team__social-icons--gray"
+                    >
                       <use href="./images/icons.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="our-team__icons-list">
                   <a href="/" class="our-team__icon">
-                    <svg width="20" height="20" class="social-icons">
+                    <svg
+                      width="20"
+                      height="20"
+                      class="our-team__social-icons--gray"
+                    >
                       <use href="./images/icons.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="our-team__icons-list">
                   <a href="/" class="our-team__icon">
-                    <svg width="20" height="20" class="social-icons">
+                    <svg
+                      width="20"
+                      height="20"
+                      class="our-team__social-icons--gray"
+                    >
                       <use href="./images/icons.svg#linkedin"></use>
                     </svg>
                   </a>
@@ -380,28 +428,44 @@
               <ul class="our-team__social-icons">
                 <li class="our-team__icons-list">
                   <a href="/" class="our-team__icon"
-                    ><svg width="20" height="20" class="social-icons">
+                    ><svg
+                      width="20"
+                      height="20"
+                      class="our-team__social-icons--gray"
+                    >
                       <use href="./images/icons.svg#instgram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="our-team__icons-list">
                   <a href="/" class="our-team__icon">
-                    <svg width="20" height="20" class="social-icons">
+                    <svg
+                      width="20"
+                      height="20"
+                      class="our-team__social-icons--gray"
+                    >
                       <use href="./images/icons.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="our-team__icons-list">
                   <a href="/" class="our-team__icon">
-                    <svg width="20" height="20" class="social-icons">
+                    <svg
+                      width="20"
+                      height="20"
+                      class="our-team__social-icons--gray"
+                    >
                       <use href="./images/icons.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="our-team__icons-list">
                   <a href="/" class="our-team__icon">
-                    <svg width="20" height="20" class="social-icons">
+                    <svg
+                      width="20"
+                      height="20"
+                      class="our-team__social-icons--gray"
+                    >
                       <use href="./images/icons.svg#linkedin"></use>
                     </svg>
                   </a>

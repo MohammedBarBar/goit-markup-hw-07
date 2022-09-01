@@ -1,19 +1,19 @@
-.wwd_section {
+.wwd {
   padding-top: 0;
 }
-.wwd_section__title {
+.wwd__title {
   @include title-sections;
 }
-.wwd_section__list {
+.wwd__list {
   display: flex;
 }
-.wwd_section__content {
+.wwd__content {
   position: relative;
   &:not(:last-child) {
     margin-right: rem(30);
   }
 }
-.wwd_section__details {
+.wwd__details {
   @include font-custome(700, 14, 16, 0.03);
   text-align: center;
   text-transform: uppercase;
